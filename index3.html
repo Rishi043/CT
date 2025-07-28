@@ -1575,7 +1575,7 @@
 <div class="popup-overlay" id="admissionPopup">
     <div class="popup-content">
         <div class="popup-header">
-            <span>Admission Alert!</span>
+            <span>🎓 Admission Alert!</span>
             <button class="close-popup" onclick="closePopup()">×</button>
         </div>
         <div class="popup-body">
@@ -1592,9 +1592,7 @@
             <button class="enquire-btn" onclick="scrollToContact()">Enquire Now</button>
         </div>
     </div>
-</div> 
-
-
+</div>
 
 <!-- Header -->
 <header class="header">
@@ -1619,9 +1617,9 @@
 
 <!-- Hero Section -->
 <section id="home" class="hero">
-    <div class="floating-element"><i class="fas fa-book"></i></div>
-    <div class="floating-element"><i class="fas fa-graduation-cap"></i></div>
-    <div class="floating-element"><i class="fas fa-calculator"></i></div>
+    <div class="floating-element">📚</div>
+    <div class="floating-element">🎓</div>
+    <div class="floating-element">🧮</div>
     
     <div class="hero-content">
         <div class="hero-text">
@@ -1719,7 +1717,9 @@
             </div>
 
             <div class="about-image fade-in">
-                <img src="/placeholder.svg?height=400&width=500" alt="Students learning at Chhabra Tutorials">
+                <div style="width: 100%; height: 400px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
             </div>
         </div>
     </div>
@@ -1809,46 +1809,6 @@
         </div>
 
         <div class="features-grid">
-            <div class="feature-card fade-in">
-                <div class="icon">
-                    <i class="fas fa-user-graduate"></i>
-                </div>
-                <h3>Experienced Faculty</h3>
-                <p>Highly qualified and passionate educators with years of teaching experience</p>
-            </div>
-
-            <div class="feature-card fade-in">
-                <div class="icon">
-                    <i class="fas fa-book-open"></i>
-                </div>
-                <h3>Comprehensive Curriculum</h3>
-                <p>Complete coverage of all topics as per board syllabi with additional practice</p>
-            </div>
-
-            <div class="feature-card fade-in">
-                <div class="icon">
-                    <i class="fas fa-users"></i>
-                </div>
-                <h3>Small Batch Sizes</h3>
-                <p>Individual attention and personalized doubt resolution for every student</p>
-            </div>
-
-            <div class="feature-card fade-in">
-                <div class="icon">
-                    <i class="fas fa-clipboard-check"></i>
-                </div>
-                <h3>Regular Assessments</h3>
-                <p>Mock tests, quizzes, and performance analysis to track progress</p>
-            </div>
-
-            <div class="feature-card fade-in">
-                <div class="icon">
-                    <i class="fas fa-question-circle"></i>
-                </div>
-                <h3>Doubt Clearing Sessions</h3>
-                <p>Dedicated time for students to clarify concepts and strengthen understanding</p>
-            </div>
-
             <div class="feature-card fade-in">
                 <div class="icon">
                     <i class="fas fa-trophy"></i>
@@ -2002,16 +1962,18 @@
                     </div>
                 </div>
 
-                <!-- Google Maps -->
+                <!-- Google Maps Placeholder -->
                 <div style="margin-top: 2rem;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.0234567890123!2d77.4126!3d23.2599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDE1JzM1LjYiTiA3N8KwMjQnNDUuNCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
-                            width="100%" height="200" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                    <div style="width: 100%; height: 200px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                        <i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i>
+                        Google Maps Location
+                    </div>
                 </div>
             </div>
 
             <div class="contact-form fade-in">
                 <h3>Send us a Message</h3>
-                <form>
+                <form id="contactForm">
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" required>
@@ -2188,7 +2150,7 @@
     });
 
     // Form submission
-    document.querySelector('form').addEventListener('submit', function(e) {
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
         e.preventDefault();
         
         // Get form data
@@ -2308,4 +2270,42 @@
     }, 1000);
 </script>
 </body>
-</html>
+</html>">
+                <div class="icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h3>Experienced Faculty</h3>
+                <p>Highly qualified and passionate educators with years of teaching experience</p>
+            </div>
+
+            <div class="feature-card fade-in">
+                <div class="icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3>Comprehensive Curriculum</h3>
+                <p>Complete coverage of all topics as per board syllabi with additional practice</p>
+            </div>
+
+            <div class="feature-card fade-in">
+                <div class="icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Small Batch Sizes</h3>
+                <p>Individual attention and personalized doubt resolution for every student</p>
+            </div>
+
+            <div class="feature-card fade-in">
+                <div class="icon">
+                    <i class="fas fa-clipboard-check"></i>
+                </div>
+                <h3>Regular Assessments</h3>
+                <p>Mock tests, quizzes, and performance analysis to track progress</p>
+            </div>
+
+            <div class="feature-card fade-in">
+                <div class="icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <h3>Doubt Clearing Sessions</h3>
+                <p>Dedicated time for students to clarify concepts and strengthen understanding</p>
+            </div>
