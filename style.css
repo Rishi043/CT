@@ -443,6 +443,8 @@ body {
     line-height: 1.2;
     animation: slideInLeft 1s ease-out;
     position: relative;
+    word-break: break-word; /* Ensure long words break and wrap */
+    text-wrap: balance; /* Helps optimize line breaks for better visual balance */
 }
 
 .hero-text h1::after {
@@ -1517,7 +1519,7 @@ body {
 
     /* Hero Section */
     .hero {
-        padding-top: 60px; /* Adjust for smaller header height on mobile */
+        padding-top: 100px; /* Increased padding to ensure content is below the header */
     }
     .hero-content {
         grid-template-columns: 1fr; /* Stack content vertically */
@@ -1525,7 +1527,7 @@ body {
         gap: 2rem;
     }
     .hero-text h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem; /* Adjusted font size for better fit on 768px and below */
     }
     .hero-text h1::after {
         right: auto; /* Remove fixed right position */
@@ -1592,14 +1594,17 @@ body {
 
 @media (max-width: 480px) {
     .hero-text h1 {
-        font-size: 2rem;
-        /* Removed !important, relying on cascade and specificity */
+        font-size: 1.6rem; /* Further reduced font size for very small screens */
+        line-height: 1.1; /* Adjusted line height */
         color: #fff; 
         text-shadow: 0 2px 8px rgba(0,0,0,0.15);
     }
     .hero-text h1::after {
-        font-size: 1.5rem; /* Smaller rocket icon */
-        bottom: -15px; /* Adjust position */
+        font-size: 1rem; /* Smaller rocket icon */
+        bottom: -10px; /* Adjust position */
+        top: auto; /* Ensure it's not trying to stick to the top */
+        left: 50%;
+        transform: translateX(-50%); /* Center the rocket */
     }
     .cta-banner h2 {
         font-size: 2rem;
